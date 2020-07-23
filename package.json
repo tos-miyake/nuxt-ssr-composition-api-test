@@ -25,7 +25,10 @@
     "@nuxt/typescript-runtime": "^0.4.10",
     "@nuxtjs/axios": "^5.11.0",
     "@vue/composition-api": "^1.0.0-beta.6",
-    "nuxt": "^2.13.0"
+    "core-js": "^2.6.5",
+    "csstype": "^2.6.11",
+    "nuxt": "^2.13.0",
+    "vue-styled-components": "^1.5.1"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^1.0.3",

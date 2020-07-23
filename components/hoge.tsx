@@ -1,22 +1,28 @@
 import { defineComponent, reactive } from '@vue/composition-api'
+import styled from 'vue-styled-components'
+
+const StyledDiv = styled.div`
+  background-color: gray;
+  color: red;
+`
 
 export default defineComponent({
-  name: 'Hoge',
+  name: 'SampleComponent',
   setup: (props) => {
     const state = reactive({
-      text: 'changeme',
+      text: 'change me',
     })
 
     const handleClick = () => {
-      alert('hoge')
+      alert('sample alert')
     }
 
     return () => (
-      <div>
+      <StyledDiv>
         <input v-model={state.text} />
-        <div> HogeComponent </div>
+        <div> Sample Component </div>
         <h2 onClick={handleClick}> {state.text} </h2>
-      </div>
+      </StyledDiv>
     )
   },
 })

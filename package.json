@@ -24,6 +24,7 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.10",
     "@nuxtjs/axios": "^5.11.0",
+    "@vue/composition-api": "^1.0.0-beta.6",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {
@@ -32,7 +33,9 @@
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
+    "@vue/babel-sugar-v-model": "^1.1.2",
     "babel-eslint": "^10.1.0",
+    "babel-preset-vca-jsx": "^0.3.6",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
@@ -42,6 +45,7 @@
     "prettier": "^2.0.5",
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.1",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "vue-tsx-support": "^3.0.0-preview.1"
   }
 }

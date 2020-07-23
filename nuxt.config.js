@@ -1,3 +1,5 @@
+import "vue-tsx-support/enable-check"
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -34,7 +36,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['@/plugins/compositionAPI.ts'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -64,5 +66,10 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    babel: {
+      plugins: ['module:@vue/babel-sugar-v-model'],
+      presets: ['@nuxt/babel-preset-app', 'vca-jsx']
+    },
+  },
 }

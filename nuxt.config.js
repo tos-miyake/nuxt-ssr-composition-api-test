@@ -69,7 +69,7 @@ export default {
   build: {
     babel: {
       plugins: ['module:@vue/babel-sugar-v-model'],
-      presets: ['@nuxt/babel-preset-app', 'vca-jsx']
+      presets: ['@nuxt/babel-preset-app', 'vca-jsx'],
     },
   },
 }
